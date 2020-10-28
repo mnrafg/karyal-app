@@ -1,3 +1,5 @@
 /node_modules
+/public/users_files
+/storage/temp
 npm-debug.log
 /*.env

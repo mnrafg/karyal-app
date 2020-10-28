@@ -26,11 +26,10 @@ const {
 } = require("../app/controllers/courses.controller");
 
 router.get("/", function (req, res) {
-  // res.json({
-  //   msg: "Welcome to Karyal",
-  //   hostname: req.hostname,
-  // });
-  res.send(`<h1>Welcome to our Heroku Project!</h1>`);
+  res.json({
+    msg: "Welcome to Karyal",
+    hostname: req.hostname,
+  });
 });
 
 const secret = process.env.SECRET || "secret";

@@ -2,6 +2,7 @@
   "name": "my-express-app",
   "version": "0.0.0",
   "private": true,
+  "main": "./bin/www",
   "scripts": {
     "start": "nodemon ./bin/www",
     "debug": "cross-env DEBUG=my-express-app:* nodemon ./bin/www"
@@ -26,5 +27,8 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
